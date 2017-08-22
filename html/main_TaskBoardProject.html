@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href='http://fonts.googleapis.com/css?family=Cherry Cream Soda' rel='stylesheet'>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="../css/main_TaskBoardProject.css">
+  <title>Tasks project - By Michal Yosef</title>
+</head>
+
+<body onload="load()">
+
+  <header class="text-center">
+    <img src="../images/title.png" class="img-responsive center-block">
+  </div>
+  <div class="movingImgDiv"><img class="movingImg" src="../images/keepCalm.jpg"></div>
+  <div> 
+      <textarea class="form-control center-block" autofocus placeholder="Add Task details here..." rows="3" id="taskDescInput" maxlength="120" required></textarea>     
+  </div>
+  <div class="taskInputButtom center-block">
+    <form class="form-inline">
+      <div class="form-group">   
+        <label> When to do task?</label></br>   
+        <input class="form-control" type="date" id="executionDateInput"  data-toggle="tooltip" title="the best time for a task is always TOMMOROW!" data-placement="bottom"  required>
+        <input type="time" id="executionTime" class="form-control">
+        <span type="button" class="btn btn-primary" id="updateTaskBtn">Update</span>
+      </div>
+    </form>
+  </div>
+  <div class="container" style="text-align: center" id="errorParent"></div>
+  <button type="button" class="btn btn-info btn-lg glyphicon glyphicon-trash" id="deleteAll" >
+    <span class="smallerFont">Delete all</span>  
+  </button>
+  <div class="container-fluid">
+    <div class="row" id="tasksShowArea"></div>
+  </div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script type="text/javascript" src="../../MDBFree/js/mdb.js"></script>
+<script src="..//js/main_TaskBoardProject.js"></script>
+<script src="..//js/task.js"></script>
+<script src="..//js/visibility.js"></script>
+<script src="..//js/events.js"></script>
+<script src="..//js/validations.js"></script>
+<script src="..//js/timing.js"></script>
+
+
+
+ <!--  credit: sound effects from http://www.freesfx.co.uk-->
+</body>
+</html>

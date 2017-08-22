@@ -1,0 +1,164 @@
+*{
+     font-family: 'Cherry Cream Soda';font-size: 22px;
+}
+
+body{
+    
+    background-image: url("../images/tile.jpg");
+   
+}
+
+::placeholder{
+    color: blue;
+    font-weight: bold;
+    
+}
+
+#taskDescInput {
+   
+    width: 45%;
+    resize: none; 
+    background-image:  url("../images/formbg.jpg");
+    background-repeat: repeat-y;
+    margin-top: 1%;
+    padding: 1.5%;
+    font-size: 22px;
+    margin-bottom: 0px; 
+    animation: myFadeIn 5s infinite;  
+}
+
+
+.smallerFont{
+    font-size: 12px;
+}
+
+
+#deleteAll{
+    position: fixed;
+    top: 88%;
+    right: 0;
+    
+}
+
+.ShowTask{
+
+    background-image: url('../images/notebg.png');
+    background-repeat: "no-repeat";
+    width: 200px;
+    height: 250px;
+    padding: 2%;
+    display: inline-block;
+    margin: 2%;
+ 
+    
+} 
+
+.ShowTaskText{
+    font-Size:  14PX;
+    height: 80%;
+    word-wrap: break-word;
+}
+
+
+.deleteIconStyle{
+
+    float: right;
+    display: none;
+   
+}  
+
+#executionDateInput{
+    width:  190px;
+}
+
+#executionTime{
+    width: 150px;
+}
+
+#updateTaskBtn{
+    width: 130px;
+}
+
+
+.movingImg {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 20%;
+    width: auto;
+    z-index: -3;
+    animation: driveRightA 40s infinite;
+}
+
+@keyframes driveRight
+{
+    from {
+        left: 0;
+    }
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes driveRightA
+{
+    0% {
+        left: 0;
+    }
+    50% {
+        left: 100%;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+@keyframes myFadeIn
+{
+    0% 
+    {
+        opacity: 0;
+    }
+    12% 
+    {
+        opacity: 0.25;
+    }
+    25%
+    {
+        opacity: 0.5;
+    }
+    37% 
+    {
+        opacity: 0.75;
+    }
+    50% 
+    {
+        opacity: 1;
+    }
+    62% 
+    {
+        opacity: 0.75;
+    }
+    75% 
+    {
+        opacity: 0.5;
+    }
+    87%
+    {
+        opacity: 0.25;
+    }
+    100% 
+    {
+        opacity: 0;
+    }
+}
+
+@keyframes myFadeOut
+{
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+   }
+}
