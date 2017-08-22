@@ -1,0 +1,2 @@
+# NotesProject
+javascript small project
